@@ -1,0 +1,143 @@
+/* Tablet Start */
+
+@media (min-width: 600px) and (max-width: 900px) {
+    html{
+        font-size: 75%;
+    }
+
+    #bars{
+        display: inline-block;
+    }
+
+    .header .row .navigation{
+        background: #FFFFFF;
+        position: absolute;
+        transition: 0.4s;
+        top: 100%;
+        right: -100%;
+        width: 20rem;
+        height: 100vh;
+    }
+
+    .header .row .navigation.active{
+        right: 0;
+    }
+
+    .header .row .navigation a{
+        color: #000000;
+        display: block;
+        margin: 1.5rem;
+        padding: 0.5rem;
+        font-size: 1.5rem;
+    }
+
+    .header .row .navigation a::after{
+        transform-origin: 0 0;
+    }
+
+    .header .row .navigation a:hover::after{
+        transform: scaleX(0.2);
+    }
+
+    .header .row .vl{
+        height: 15px;
+    }
+}
+
+/* Tablet Finish */
+
+/* Handphone Start */
+
+@media (max-width: 599px) {
+    html{
+        font-size: 55%;
+    }
+
+    #bars{
+        display: inline-block;
+    }
+
+    .header .row .navigation{
+        background: #FFFFFF;
+        position: absolute;
+        transition: 0.4s;
+        top: 100%;
+        right: -100%;
+        width: 20rem;
+        height: 100vh;
+    }
+
+    .header .row .navigation.active{
+        right: 0;
+    }
+
+    .header .row .navigation a{
+        color: #000000;
+        display: block;
+        margin: 1.5rem;
+        padding: 0.5rem;
+        font-size: 1.5rem;
+    }
+
+    .header .row .navigation a::after{
+        transform-origin: 0 0;
+    }
+
+    .header .row .navigation a:hover::after{
+        transform: scaleX(0.2);
+    }
+
+    .header .row .vl{
+        height: 10px;
+    }
+
+    .home .row .sosmed .vl{
+        height: 10px;
+    }
+
+    .about .row{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .skills .row{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact .row{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .contact .row-bottom{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    footer{
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: center;
+    }
+
+    footer .footer-center{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 1rem;
+    }
+
+    footer .footer-right{
+        display: none;
+    }
+
+    .icon-bar{
+        display: none;
+    }
+}
+
+/* Handphone Finish */
